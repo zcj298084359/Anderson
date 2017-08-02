@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>anderson</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<!--倒计时-->
+		<div id="time-wrap">
+			<span>倒计时</span><br>
+			<span id="time"></span>秒
+		</div>
+		<!--音乐按钮-->
+		<div id="music">
+			<img src="img/music-btn.png"/>
+		</div>
+		<audio src="audio/bgm.mp3" id="bgm" autoplay="autoplay" loop="loop"></audio>
+		
+		<!--游戏开始-->
+		<div id="wrap">
+			<!--分页01-->
+			<div class="page01">
+				<img src="img/page01bg.jpg"/>
+			</div>
+			<!--分页02-->
+			<div class="page02">
+				<div id="loading"></div>
+			</div>
+			<!--分页03-->
+			<div class="page03">
+				<div class="question">					
+					<p><input type="radio" name="option" id="option1" value="1" class="select"/><label for="option1"> 丹麦人</label></p>
+					<p><input type="radio" name="option" id="option2" value="0" class="select"/><label for="option2"> 中国人</label></p>
+					<p><input type="radio" name="option" id="option3" value="0" class="select"/><label for="option3"> 英国人</label></p>
+				</div>
+			</div>
+			<!--分页04-->
+			<div class="page04">
+				<div class="question">					
+					<p><input type="radio" name="option" id="option4" value="1" class="select"/><label for="option4"> 伊埃斯科城堡</label></p>
+					<p><input type="radio" name="option" id="option5" value="0" class="select"/><label for="option5"> 天鹅堡</label></p>
+					<p><input type="radio" name="option" id="option6" value="0" class="select"/><label for="option6"> 温莎堡</label></p>
+				</div>
+			</div>
+			<!--分页05-->
+			<div class="page05">
+				<div class="question">					
+					<p><input type="radio" name="option" id="option7" value="0" class="select"/><label for="option7"> 钓鱼岛</label></p>
+					<p><input type="radio" name="option" id="option8" value="1" class="select"/><label for="option8"> 英菲岛</label></p>
+					<p><input type="radio" name="option" id="option9" value="0" class="select"/><label for="option9"> 普吉岛</label></p>
+				</div>
+			</div>
+			<!--分页06-->
+			<div class="page06">
+				<div class="question">					
+					<p><input type="radio" name="option" id="option10" value="0" class="select"/><label for="option10"> 剑桥渔船</label></p>
+					<p><input type="radio" name="option" id="option11" value="0" class="select"/><label for="option11"> 威尼斯渔船</label></p>
+					<p><input type="radio" name="option" id="option12" value="1" class="select"/><label for="option12"> 安徒生童话游船</label></p>
+				</div>
+			</div>
+			<!--分页07-->
+			<div class="page07">
+				<div class="question">					
+					<p><input type="radio" name="option" id="option13" value="0" class="select"/><label for="option13"> 萨米村</label></p>
+					<p><input type="radio" name="option" id="option14" value="1" class="select"/><label for="option14"> 菲英村</label></p>
+					<p><input type="radio" name="option" id="option15" value="0" class="select"/><label for="option15"> 维京村</label></p>
+				</div>
+			</div>
+			<!--分页08(顺利过关)-->
+			<div class="page08">
+				<div class="use-time">用 时</br><span id="lasttime"></span> 秒</div>
+				<div class="raffle">点击抽奖吧!</div>
+			</div>
+			<!--分页09(转盘抽奖)-->
+			<div class="page09">
+				<div class="circle-wrap">					
+					<div class="circle_outer">
+						<img src="img/page09outer.png"/>
+					</div>
+					<div class="circle_inner">
+						<img src="img/page09inner.png"/>
+					</div>-->
+				</div>
+				<dl class="list">
+					<dt>一等奖：</dt>
+					<dd>丹麦品牌ECCO爱步鞋一双 或 新秀丽 电脑包及旅行收纳包各一个</dd>
+					<dt>二等奖：</dt>
+					<dd>丹麦进口Kjeldsens蓝罐曲奇(安徒生诞辰纪念版908克)一盒</dd>
+					<dt>三等奖：</dt>
+					<dd>玩具锡兵或丹麦旅游杂志或安徒生童话茶杯垫(随机)</dd>
+				</dl>
+			</div>
+			<!--分页10(提交信息)-->
+			<div class="page10">				
+				<ul class="message">
+					<li><label for="name">姓 名：</label><input type="text" name="" id="name" value=""/></li>
+					<li><label for="phone">手机号：</label><input type="text" name="" id="phone" value=""/></li>
+					<li><label for="address">地 址：</label><textarea id="address" name="" rows="5" cols="24"></textarea></li>
+				</ul>
+				<div class="submit-btn">提交</div>
+			</div>
+			<!--分页11(很遗憾没通过)-->
+			<div class="page11">
+				<img src="img/overtime.png" class="overtime"/>
+				<img src="img/nopass.png" class="nopass"/>
+				<div class="use-time">用时<span id="nopasstime"></span>秒</div>
+				<div class="question-sum">答对<span id="questionsum"></span>题</div>
+				<div class="one-more">再玩一次</div>
+			</div>
+			<!--分页12(一等奖)-->
+			<div class="page12">
+				<img src="img/firstpirze1.png" class="firstprize1"/>
+				<img src="img/firstprize2.png" class="firstprize2"/>
+				<img src="img/share.png" class="shareimg"/>
+				<span class="share">分享一下</span>
+			</div>
+			<!--分页13(二三等奖)-->
+			<div class="page13">
+				<img src="img/secondprize.png" class="secondprize" />
+				<img src="img/thirdprize.png" class="thirdprize" />
+				<img src="img/share.png" class="shareimg"/>
+				<span class="share">分享一下</span>
+			</div>			
+		</div>		
+	
+		<script src="js/jquery-1.12.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.transit.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
